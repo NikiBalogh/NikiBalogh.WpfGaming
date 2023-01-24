@@ -1,0 +1,29 @@
+﻿<Window x:Class="RockPaperScissors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScissors"
+        mc:Ignorable="d"
+        Title="Sten Saks Papir" Height="450" Width="650">
+    <Grid>
+        <Button x:Name="btnRock" Content="Sten" HorizontalAlignment="Left" Margin="113,310,0,0" VerticalAlignment="Top" Width="84" Click="btnRock_Click"/>
+        <Button x:Name="btnPaper" Content="Papir" HorizontalAlignment="Left" Margin="113,386,0,0" VerticalAlignment="Top" Width="84" Click="btnPaper_Click"/>
+        <Button x:Name="btnScissors" Content="Saks" HorizontalAlignment="Left" Margin="114,349,0,0" VerticalAlignment="Top" Width="84" Click="btnScissors_Click"/>
+        <Image x:Name="imgPlayer" Source="/images/Thinking.png" HorizontalAlignment="Left" Height="280" VerticalAlignment="Top" Width="313">
+        </Image>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="382,307,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.09,0.531"/>
+        <Label x:Name="lblScore" Content="0" HorizontalAlignment="Left" Margin="429,307,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.615,1.692"/>
+        <Rectangle HorizontalAlignment="Left" Height="444" Stroke="Black" VerticalAlignment="Top" Width="22" Fill="#FFF7F7F7" Margin="314,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="19" Margin="0,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="649" Fill="#FFF7F7F7"/>
+        <Image x:Name="imgBot" Source="/images/Thinking.png" HorizontalAlignment="Left" Height="278" VerticalAlignment="Top" Width="317" Margin="336,0,0,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Highscore:" HorizontalAlignment="Left" Margin="358,331,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHighscore" Content="0" HorizontalAlignment="Left" Margin="429,331,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblName" Content="" HorizontalAlignment="Left" Margin="454,331,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

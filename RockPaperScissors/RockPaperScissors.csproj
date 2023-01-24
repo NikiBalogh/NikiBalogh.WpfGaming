@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Highscore.txt" />
+		<None Remove="images\Paper.png" />
+		<None Remove="images\Rock.png" />
+		<None Remove="images\Scissors.png" />
+		<None Remove="images\Thinking.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Highscore.txt">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="images\Paper.png" />
+		<Resource Include="images\Rock.png" />
+		<Resource Include="images\Scissors.png" />
+		<Resource Include="images\Thinking.png" />
+	</ItemGroup>
+
+</Project>
